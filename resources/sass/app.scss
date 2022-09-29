@@ -1,1 +1,58 @@
-//
+@import '/resources/sass/partials/variables.scss';
+@import './partials/general_rules';
+
+// webpage scss
+
+html {
+    text-align: center;
+}
+
+header,
+footer {
+    height: 100px;
+    background-color: $bg1;
+    line-height: 100px;
+
+    li {
+        margin: 0 20px;
+        list-style: none;
+
+        a {
+            text-decoration: none;
+            color: black;
+            position: relative;
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}
+
+main {
+    min-height: calc(100vh - 200px);
+    background-color: $bg2;
+
+    h1 {
+        padding-top: 20px;
+    }
+
+    section {
+        max-width: 90%;
+        margin: 50px auto;
+
+        div {
+            margin: 30px;
+            padding: 10px;
+            border: 1px solid $bg1;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+
+        li {
+            list-style: none;
+        }
+    }
+}//
