@@ -29,7 +29,7 @@ class TrainsTableSeeder extends Seeder
             $newTrain->carriage_number = $faker->randomNumber(2, true);
             $newTrain->on_schedule = $faker->numberBetween(0, 1); // la colonna 'on_schedule' accetta valori booleani: cioè 0 e 1.
             $newTrain->cancelled = $faker->numberBetween(0, 1); // come riga sopra
-            $newTrain->save(); // salvare il nuovo oggetto della classe Train creato: ATTENZIONE, il treno è salvato in Laravel NON nel database: per inviarlo al database da terminale si digita: 'php artisan db:seed --class=TrainsTableSeed'
+            $newTrain->save(); // salvare il nuovo oggetto della classe Train creato: ATTENZIONE, il treno è salvato in Laravel NON nel database: per inviarlo al database da terminale si digita: 'php artisan db:seed --class=TrainsTableSeed', comando che esegue la funzione run() di questo file.
         }
 
     }
