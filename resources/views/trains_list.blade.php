@@ -10,7 +10,7 @@
             <li>Stazione di partenza: {{$train->departure_station}}</li>
             <li>Orario partenza: {{$train->departure_time}}</li>
             <li>Stazione di arrivo: {{$train->arrival_station}}</li>
-            <li>Orario di arrivo: {{$train->departure_time}}</li>
+            <li>Orario di arrivo: {{$train->arrival_time}}</li>
             <li>Codice treno: {{$train->train_code}}</li>
         </ul>
     @endforeach
