@@ -20,6 +20,7 @@ class CreateTrainsTable extends Migration
             $table->string('arrival_station', 60);
             $table->time('departure_time', 0); // colonna con dato di tipo TIME (hh-mm-ss).
             $table->time('arrival_time', 0);
+            $table->date('departure_date'); // colonna con dato di tipo DATE (yyyy-mm-dd).
             $table->string('train_code', 5);
             $table->unsignedTinyInteger('carriage_number'); // numero carrozze in formato TINYINT, UNSIGNED: quindi da 0 a 255.
             $table->boolean('on_schedule');	// colonna di tipo BOOLEANO per sapere se il treno è in orario (true) o no (false).
